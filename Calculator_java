@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+import javax.swing.plaf.TreeUI;
+
+public class calculator {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int ans = 0;
+        System.out.println("enter the operator");
+        // take input till user put x or X
+        while (true) {
+            char op = in.next().trim().charAt(0);
+            if (op == '+' || op == '-' || op == '*' || op == '%') {
+                System.out.println("enter the 2 number");
+                int n1 = in.nextInt();
+                int n2 = in.nextInt();
+
+                if (op == '+') {
+                    ans = n1 + n2;
+
+                }
+                if (op == '-') {
+                    ans = n1 - n2;
+
+                }
+                if (op == '*') {
+                    ans = n1 * n2;
+
+                }
+                if (op == '%') {
+                    ans = n1 % n2;
+
+                }
+
+            } else if (op == 'x' || op == 'X') {
+                break;
+            } else {
+                System.out.println("Invalid");
+            }
+            System.out.println(ans);
+        }
+
+    }
+}
