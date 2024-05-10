@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Nested_switch_case {
+    public static void main(String[] args) {
+        // nested switch case switch case inside a switch case
+        Scanner in = new Scanner(System.in);
+        String data = in.next();
+        // int empID = in.nextInt();
+        // int salary = in.nextInt();
+
+        switch (data) {
+            case "empID":
+                int empID = in.nextInt();
+                switch (empID) {
+                    case 1:
+                        System.out.println("Raksha Ashtankar");
+                        break;
+                    case 2:
+                        System.out.println("Vaibhav Gaidhane");
+                        break;
+                    case 3:
+                        System.out.println("Payal Sambhare");
+                        break;
+                    case 4:
+                        System.out.println("Hrushikesh Purohit");
+                        break;
+                }
+                break;
+            case "salary":
+                int salary = in.nextInt();
+                switch (salary) {
+                    case 1:
+                        System.out.println("25 lakh");
+                        break;
+                    case 2:
+                        System.out.println("15 lakh");
+                        break;
+
+                }
+                break;
+            default:
+                break;
+
+        }
+    }
+}
