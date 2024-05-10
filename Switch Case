@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String fruit = in.next();
+        // .equals checks the value and not the reference
+        // == checks the reference of it and also the value
+        // in switch case you can jump to various cases based on your expression
+        // case should be same type as expression must be constant or literial
+        // duplicate cases is not allowed
+        // break terminate the sequence and it not use it will continue to check next
+        switch (fruit) {
+            case "Mango":
+                System.out.println("King of fruits");
+                break;
+            case "Apple":
+                System.out.println("A sweet red Fruit");
+                break;
+            case "Grape":
+                System.out.println("A small Fruit");
+                break;
+            //case "Orange" -> System.out.println("ROUND FRUIT");
+            default:
+                System.out.println("Enter a valid fruit");
+                ;
+        }
+
+    }
+
+}
