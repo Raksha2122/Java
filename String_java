@@ -1,0 +1,8 @@
+public class String_java {
+    public static void main(String[] args) {
+        String name = "raksha ashtankar";
+        System.out.println(name);
+        // eveything that start with capital letter is a class
+        
+    }
+}
