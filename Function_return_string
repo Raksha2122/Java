@@ -1,0 +1,11 @@
+public class Function_return_string {
+    public static void main(String[] args) {
+        String ok = greet();
+        System.out.println(ok);
+    }
+
+    static String greet() {
+        String greeting = "How are you";
+        return greeting;
+    }
+}
