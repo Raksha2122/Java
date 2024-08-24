@@ -1,0 +1,48 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class array {
+    public static void main(String[] args) {
+        // array store a series eq store 5 roll no.
+        // Syntax - datatype[] variable_name = new datatype[size];
+        // int [] rollno = new int[5];
+        // all the type of the data in array should be same
+        // int[] rollno1 = {23,56,34,67,67};
+        // int[] ros; // declearation of array and ros is getting defined in the stack
+        // ros = new int[5]; // intialisation actually here object is created in the
+        // heap memory
+        // System.out.println(ros[1]);
+        // String[] arr = new String[4];
+        // System.out.println(arr[2]); // null is a literal
+        // String a = null; // null is like none special value the by defualt value
+
+        Scanner in = new Scanner(System.in);
+        Scanner st = new Scanner(System.in);
+        int[] arr1 = new int[5];
+        arr1[0] = 23;
+        arr1[1] = 45;
+        arr1[2] = 6;
+        arr1[3] = 42;
+        arr1[4] = 9;
+        System.out.println(arr1[3]);
+
+        // input using for loops
+        for (int i = 0; i < arr1.length; i++) {
+            arr1[i] = in.nextInt();
+        }
+        System.out.println(Arrays.toString(arr1)); // print the array without the use of for loop it convert the array
+                                                   // to string and print it
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i] + " ");
+        }
+        // array of oject
+        String[] str = new String[4];
+        for (int j = 0; j < str.length; j++) {
+            str[j] = st.next();
+        }
+        System.out.println(Arrays.toString(str));
+        // modify
+        str[1] = "kunal";
+        System.out.println(Arrays.toString(str));
+    }
+}
