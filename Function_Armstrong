@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Function_Armstrong {
+    public static void main(String[] args) {
+        // Scanner in = new Scanner(System.in);
+        // int n = in.nextInt()
+        // boolean ans = isArm(n); // check if the number is armstrong number or not
+        // System.out.println(ans);
+        for (int i = 100; i < 1000; i++) { // list down the 3 digit armstrong numbers
+            if (isArm(i)) {
+                System.out.print(i + " ");
+            }
+
+        }
+    }
+
+    static boolean isArm(int n) {
+        int original = n;
+        int sum = 0;
+
+        while (n > 0) {
+            int rem = n % 10; // to extract the ones digit
+            n = n / 10; // to get the 1st two digits
+            sum = sum + rem * rem * rem;
+        }
+        return sum == original;
+    }
+}
