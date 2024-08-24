@@ -1,0 +1,20 @@
+import java.util.Arrays;
+
+public class Variable_Argument {
+    public static void main(String[] args) {
+        // VarArg when you do not know how many variable you will be passing
+        // length is not constant
+        fun(2, 3, 4, 5, 6, 7, 8, 9, 55);
+        multiple(2, 7, "raksha", "Vaibhav", "Rishi", "Nachi");
+    }
+
+    static void multiple(int a, int b, String... v) {
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(Arrays.toString(v));
+    }
+
+    static void fun(int... v) {
+        System.out.println(Arrays.toString(v));
+    }
+}
